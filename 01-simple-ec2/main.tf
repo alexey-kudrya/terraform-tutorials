@@ -7,3 +7,13 @@ resource "aws_instance" "example" {
   instance_type = "t2.micro"
 }
 
+#terraform {
+# backend "s3" {
+#   bucket  = "bucket_name"
+#   key     = "global/s3/terraform.tfstate"
+#   region  = "us-east-2"
+
+#   dynamodb_table  = "table_name"
+#   encrypt         = "true"
+# }
+#}

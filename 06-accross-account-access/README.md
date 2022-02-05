@@ -24,7 +24,7 @@ After `init` running you need to specify the ssh key to the EC2 instance.
 mkdir /home/ec2-user/.aws/
 cat <<EOF > /home/ec2-user/.aws/config
 [profile demo]
-role_arn = "arn:aws:iam::ACCOUNT-B-ID:role/ROLE-NAME"
+role_arn = arn:aws:iam::ACCOUNT-B-ID:role/ROLE-NAME
 credential_source = Ec2InstanceMetadata
 EOF
 chown -R ec2-user:ec2-user /home/ec2-user/.aws/
